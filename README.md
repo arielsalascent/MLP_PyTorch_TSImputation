@@ -233,6 +233,9 @@ print(datos_AP.tail())
 </table>
 </div>
 
+### Data visualization
+#### Exploring the features of the time series data
+
 ```python
 # Plot the last 4 years
 datos_AP['01/01/2020':'31/12/2023'].plot(subplots=True, figsize=(23,10))
@@ -241,3 +244,8 @@ datos_AP['01/01/2020':'31/12/2023'].plot(subplots=True, figsize=(23,10))
 ```
 ![Description](PlotsFigures/TimeSeriesPlot_1.png)
 ![Description](PlotsFigures/TimeSeriesPlot_2.png)
+
+- Echa time series echibits missing data at various instances. These gaps can occur sporadically, but there are also instances of extended periods of missing values.
+- It would be worthwile to explore some features as the number of total missing data and the correlation between series.
+
+
