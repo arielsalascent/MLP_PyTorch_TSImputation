@@ -248,4 +248,10 @@ datos_AP['01/01/2020':'31/12/2023'].plot(subplots=True, figsize=(23,10))
 - Echa time series echibits missing data at various instances. These gaps can occur sporadically, but there are also instances of extended periods of missing values.
 - It would be worthwile to explore some features as the number of total missing data and the correlation between series.
 
-
+```python
+Mtx_Corr_AP = datos_AP.corr()
+mask = np.triu(np.ones_like(Mtx_Corr_AP, dtype=bool))
+sns.heatmap(Mtx_Corr_AP, annot=True, mask=mask, cmap="crest")
+plt.show()
+```
+![Description](PlotsFigures/MatrixCorrelation.png)
