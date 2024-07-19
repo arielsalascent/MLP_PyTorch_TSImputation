@@ -1,2 +1,38 @@
-# MLP_PyTorch_TSImputation
-Multilayer Perceptron Neural Network was implemented in order to fill long missing gaps in time multivariate time series. This project is in the core of climatology.
+# Imputation model for multivariate time series using PyTorch
+
+## Problem description:
+The long periods with missing data among the series obstaculize the perfomance of deep time series analysis. At the same time de prediction task with an incomplete time series could became unreliable.
+
+- The data is for this project came from the repository of the [University of Wyoming](https://weather.uwyo.edu/upperair/sounding.html)
+- The imputation process it is based on the [Part ek al. (2022)](https://www.researchgate.net/publication/366552360_Long-term_missing_value_imputation_for_time_series_data_using_deep_neural_networks)
+- The data has sporadic and long gaps with missing data.
+
+### Import the libraries needed and connect to the Google Colab GPU
+
+```python
+import torch
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import sklearn
+!pip install -q install torchmetrics
+import torchmetrics
+from sklearn import metrics
+from tqdm.notebook import tqdm, trange
+device = 'cuda' if torch.cuda.is_available() else 'cpu'
+!nvidia-smi
+```
+### Import the CSV
+
+```python
+datos_AP = pd.read_csv("DB_AP_L.csv")
+datos_AP.index = datos_AP["Fecha"]
+datos_AP = datos_AP.drop(columns=["Fecha"])
+print(datos_AP.head())
+```
+
+
+
+
+
+
