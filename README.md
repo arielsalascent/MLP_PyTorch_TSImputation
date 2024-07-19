@@ -1,7 +1,7 @@
 # Imputation model for multivariate time series using PyTorch
 
 ## Problem description:
-The long periods with missing data among the series obstaculize the perfomance of deep time series analysis. At the same time de prediction task with an incomplete time series could became unreliable.\n
+The long periods with missing data among the series obstaculize the perfomance of deep time series analysis. At the same time de prediction task with an incomplete time series could became unreliable.
 Algorithms and methods for analyzing time series data require a complete dataset. The reconstruction of time series with missing data has significantly improved with the advent of deep neural networks. Many researchers have utilized neural networks to fill in missing data, demonstrating superior results compared to traditional methods. Additionally, climatological data is a crucial source of information because it is intricately linked with various fields such as agriculture, tourism, transportation, natural disaster prevention, and water conservation. In recent years, deep learning methods have gained popularity for time series reconstruction.
 
 - The data is for this project came from the repository of the [University of Wyoming](https://weather.uwyo.edu/upperair/sounding.html)
