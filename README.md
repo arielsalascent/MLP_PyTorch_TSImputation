@@ -254,4 +254,4 @@ mask = np.triu(np.ones_like(Mtx_Corr_AP, dtype=bool))
 sns.heatmap(Mtx_Corr_AP, annot=True, mask=mask, cmap="crest")
 plt.show()
 ```
-![Description](PlotsFigures/MatrixCorrelation.png)
+![Description](PlotsFigures/CorrelationMatrix.png)
