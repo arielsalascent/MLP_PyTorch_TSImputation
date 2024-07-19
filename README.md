@@ -2,6 +2,9 @@
 
 ## Problem description:
 The long periods with missing data among the series obstaculize the perfomance of deep time series analysis. At the same time de prediction task with an incomplete time series could became unreliable.
+Algorithms and method to analyze time series data requieres a complete dataset. The reconstruction of time series with missing data has experimented and important enhance since the deep neural networks came in to the field. Many researchers have use neural networks with the fill missing data purpose and show better results against traditional methods.
+Besides the climatological data is an fundamental source of information because of it is highly interwind whit other fields such as: agriculture, turism, transportation, prevention of natural disasters and water preservation. 
+The Deep-Learning methods have become popular in the last years for time series reconstruction.
 
 - The data is for this project came from the repository of the [University of Wyoming](https://weather.uwyo.edu/upperair/sounding.html)
 - The imputation process it is based on the [Part et al. (2022)](https://www.researchgate.net/publication/366552360_Long-term_missing_value_imputation_for_time_series_data_using_deep_neural_networks)
