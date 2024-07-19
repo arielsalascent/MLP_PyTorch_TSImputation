@@ -11,6 +11,7 @@ The long periods with missing data among the series obstaculize the perfomance o
 
 ```python
 import torch
+import os
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -25,7 +26,9 @@ device = 'cuda' if torch.cuda.is_available() else 'cpu'
 ### Import the CSV
 
 ```python
-datos_AP = pd.read_csv("DB_AP_L.csv")
+file_name='DB_AP_L.csv'
+folder_path = os.path.join(os.getcwd())
+datos_AP = pd.read_csv(os.path.join(folder_path, file_name), sep=';')
 datos_AP.index = datos_AP["Fecha"]
 datos_AP = datos_AP.drop(columns=["Fecha"])
 print(datos_AP.head())
