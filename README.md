@@ -233,6 +233,11 @@ print(datos_AP.tail())
 </table>
 </div>
 
-
-
-
+```python
+# Plot the last 4 years
+datos_AP['01/01/2020':'31/12/2023'].plot(subplots=True, figsize=(23,10))
+# Plot the first 4 years
+datos_AP['01/01/2020':'31/12/2023'].plot(subplots=True, figsize=(23,10))
+```
+![png](TimeSeriesPlot_1.png)
+![png](TimeSeriesPlot_2.png)
