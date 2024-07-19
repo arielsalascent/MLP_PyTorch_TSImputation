@@ -29,12 +29,109 @@ device = 'cuda' if torch.cuda.is_available() else 'cpu'
 ```python
 file_name='DB_AP_L.csv'
 folder_path = os.path.join(os.getcwd())
-datos_AP = pd.read_csv(os.path.join(folder_path, file_name), sep=';')
+datos_AP = pd.read_csv(os.path.join(folder_path, file_name), sep=',')
 datos_AP.index = datos_AP["Fecha"]
 datos_AP = datos_AP.drop(columns=["Fecha"])
 print(datos_AP.head())
 ```
-
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Fecha</th>
+      <th>CDMX</th>
+      <th>Chihuahua</th>
+      <th>Empalme</th>
+      <th>Guadalajara</th>
+      <th>Zacatecas</th>
+      <th>Mazatlan</th>
+      <th>Manzanillo</th>
+      <th>Monterrey</th>
+      <th>LaPaz</th>
+      <th>Tucson</th>
+      <th>Veracruz</th>
+      <th>Merida</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>01/01/1980</th>
+      <td>11.77</td>
+      <td>6.05</td>
+      <td>8.56</td>
+      <td>10.02</td>
+      <td>NaN</td>
+      <td>14.05</td>
+      <td>24.95</td>
+      <td>11.57</td>
+      <td>NaN</td>
+      <td>5.15</td>
+      <td>32.74</td>
+      <td>17.24</td>
+    </tr>
+    <tr>
+      <th>02/01/1980</th>
+      <td>12.31</td>
+      <td>5.10</td>
+      <td>11.44</td>
+      <td>14.22</td>
+      <td>NaN</td>
+      <td>20.20</td>
+      <td>28.06</td>
+      <td>6.38</td>
+      <td>NaN</td>
+      <td>8.87</td>
+      <td>27.71</td>
+      <td>16.26</td>
+    </tr>
+    <tr>
+      <th>03/01/1980</th>
+      <td>10.63</td>
+      <td>8.14</td>
+      <td>9.01</td>
+      <td>11.70</td>
+      <td>NaN</td>
+      <td>19.99</td>
+      <td>20.82</td>
+      <td>22.50</td>
+      <td>NaN</td>
+      <td>5.10</td>
+      <td>29.78</td>
+      <td>19.04</td>
+    </tr>
+    <tr>
+      <th>04/01/1980</th>
+      <td>7.23</td>
+      <td>5.46</td>
+      <td>10.05</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>22.77</td>
+      <td>20.25</td>
+      <td>8.44</td>
+      <td>NaN</td>
+      <td>5.64</td>
+      <td>33.51</td>
+      <td>31.82</td>
+    </tr>
+    <tr>
+      <th>05/01/1980</th>
+      <td>6.54</td>
+      <td>5.39</td>
+      <td>9.87</td>
+      <td>4.33</td>
+      <td>NaN</td>
+      <td>17.72</td>
+      <td>14.66</td>
+      <td>9.61</td>
+      <td>NaN</td>
+      <td>4.66</td>
+      <td>24.17</td>
+      <td>13.16</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 
 
