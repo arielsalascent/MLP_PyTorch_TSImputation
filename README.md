@@ -10,6 +10,7 @@ The long periods with missing data among the series obstaculize the perfomance o
 ### Import the libraries needed and connect to the Google Colab GPU
 
 ```python
+#pip install -r requirements.txt
 import torch
 import os
 import numpy as np
