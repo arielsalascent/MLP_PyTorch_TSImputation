@@ -262,6 +262,7 @@ for i in range(datos_AP.shape[1]):
   print(f'Missing data in {datos_AP.columns[i]}: {n_miss} | Percentage of missing: {n_miss*100/datos_AP.shape[0]:.2f} %')
 ```
 
+```
 Missing data in CDMX: 1459 | Percentage of missing: 9.08 %
 Missing data in Chihuahua: 5824 | Percentage of missing: 36.24 %
 Missing data in Empalme: 5903 | Percentage of missing: 36.73 %
@@ -274,5 +275,5 @@ Missing data in LaPaz: 7901 | Percentage of missing: 49.16 %
 Missing data in Tucson: 411 | Percentage of missing: 2.56 %
 Missing data in Veracruz: 3101 | Percentage of missing: 19.30 %
 Missing data in Merida: 4076 | Percentage of missing: 25.36 %
-
+```
 
