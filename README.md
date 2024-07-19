@@ -277,4 +277,6 @@ Missing data in Tucson: 411 | Percentage of missing: 2.56 %
 Missing data in Veracruz: 3101 | Percentage of missing: 19.30 %
 Missing data in Merida: 4076 | Percentage of missing: 25.36 %
 ```
+## Imputation of Empalme data
 
+The Empalme time series has a high correlation with Tucson which is almost complete.
