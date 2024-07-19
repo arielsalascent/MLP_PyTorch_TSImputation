@@ -255,3 +255,24 @@ sns.heatmap(Mtx_Corr_AP, annot=True, mask=mask, cmap="crest")
 plt.show()
 ```
 ![Description](PlotsFigures/CorrelationMatrix.png)
+
+```python
+for i in range(datos_AP.shape[1]):
+  n_miss = datos_AP.iloc[:,i].isnull().sum()
+  print(f'Missing data in {datos_AP.columns[i]}: {n_miss} | Percentage of missing: {n_miss*100/datos_AP.shape[0]:.2f} %')
+```
+
+Missing data in CDMX: 1459 | Percentage of missing: 9.08 %
+Missing data in Chihuahua: 5824 | Percentage of missing: 36.24 %
+Missing data in Empalme: 5903 | Percentage of missing: 36.73 %
+Missing data in Guadalajara: 4170 | Percentage of missing: 25.95 %
+Missing data in Zacatecas: 10002 | Percentage of missing: 62.24 %
+Missing data in Mazatlan: 4587 | Percentage of missing: 28.54 %
+Missing data in Manzanillo: 3564 | Percentage of missing: 22.18 %
+Missing data in Monterrey: 6841 | Percentage of missing: 42.57 %
+Missing data in LaPaz: 7901 | Percentage of missing: 49.16 %
+Missing data in Tucson: 411 | Percentage of missing: 2.56 %
+Missing data in Veracruz: 3101 | Percentage of missing: 19.30 %
+Missing data in Merida: 4076 | Percentage of missing: 25.36 %
+
+
