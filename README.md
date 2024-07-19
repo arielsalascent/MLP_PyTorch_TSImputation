@@ -33,6 +33,7 @@ datos_AP = pd.read_csv(os.path.join(folder_path, file_name), sep=',')
 datos_AP.index = datos_AP["Fecha"]
 datos_AP = datos_AP.drop(columns=["Fecha"])
 print(datos_AP.head())
+print(datos_AP.tail())
 ```
 <div>
 <table border="1" class="dataframe">
@@ -133,6 +134,104 @@ print(datos_AP.head())
 </table>
 </div>
 
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Fecha</th>
+      <th>CDMX</th>
+      <th>Chihuahua</th>
+      <th>Empalme</th>
+      <th>Guadalajara</th>
+      <th>Zacatecas</th>
+      <th>Mazatlan</th>
+      <th>Manzanillo</th>
+      <th>Monterrey</th>
+      <th>LaPaz</th>
+      <th>Tucson</th>
+      <th>Veracruz</th>
+      <th>Merida</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>27/12/2023</th>
+      <td>16.61</td>
+      <td>NaN</td>
+      <td>8.44</td>
+      <td>9.77</td>
+      <td>NaN</td>
+      <td>22.19</td>
+      <td>30.92</td>
+      <td>NaN</td>
+      <td>15.04</td>
+      <td>6.20</td>
+      <td>NaN</td>
+      <td>46.68</td>
+    </tr>
+    <tr>
+      <th>28/12/2023</th>
+      <td>4.24</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>8.40</td>
+      <td>NaN</td>
+      <td>17.78</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>16.56</td>
+      <td>8.69</td>
+      <td>NaN</td>
+      <td>49.14</td>
+    </tr>
+    <tr>
+      <th>29/12/2023</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>9.22</td>
+      <td>NaN</td>
+      <td>18.44</td>
+      <td>23.44</td>
+      <td>NaN</td>
+      <td>13.35</td>
+      <td>5.63</td>
+      <td>40.66</td>
+      <td>34.41</td>
+    </tr>
+    <tr>
+      <th>30/12/2023</th>
+      <td>8.38</td>
+      <td>NaN</td>
+      <td>6.96</td>
+      <td>NaN</td>
+      <td>5.48</td>
+      <td>15.48</td>
+      <td>23.78</td>
+      <td>NaN</td>
+      <td>10.63</td>
+      <td>5.87</td>
+      <td>NaN</td>
+      <td>31.42</td>
+    </tr>
+    <tr>
+      <th>31/12/2023</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>7.48</td>
+      <td>10.44</td>
+      <td>NaN</td>
+      <td>17.35</td>
+      <td>28.18</td>
+      <td>NaN</td>
+      <td>11.72</td>
+      <td>7.15</td>
+      <td>NaN</td>
+      <td>21.50</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 
 
