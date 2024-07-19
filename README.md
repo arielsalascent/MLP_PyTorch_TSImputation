@@ -239,5 +239,5 @@ datos_AP['01/01/2020':'31/12/2023'].plot(subplots=True, figsize=(23,10))
 # Plot the first 4 years
 datos_AP['01/01/2020':'31/12/2023'].plot(subplots=True, figsize=(23,10))
 ```
-![Description](MLP_PyTorch_TSImputation/PlotTimeSeriesPlot_1.png)
+![Description](MLP_PyTorch_TSImputation/Plots and Figures/PlotTimeSeriesPlot_1.png)
 ![Description](TimeSeriesPlot_2.png)
