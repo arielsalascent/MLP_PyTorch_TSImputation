@@ -310,5 +310,5 @@ The Empalme time series has a high correlation with Tucson, which is almost comp
     </ol>
 </ol>
 
-![Description](PlotsFigures/DataPreprocess.png)
+![Description](PlotsFigures/DataPreprocess.PNG)
 
