@@ -279,4 +279,25 @@ Missing data in Merida: 4076 | Percentage of missing: 25.36 %
 ```
 ## Imputation of Empalme data
 
-The Empalme time series has a high correlation with Tucson which is almost complete.
+The Empalme time series has a high correlation with Tucson, which is almost complete. So these two were used to replicate the data pre-processing as in [Park et al. (2022)](https://www.researchgate.net/publication/366552360_Long-term_missing_value_imputation_for_time_series_data_using_deep_neural_networks). In order to adapt the methodology to this project the process remains as follows:
+
+<ol>
+  <li>Generate a reduced table for the auxiliar time series
+    <ol>
+      <li>Choose a lag</li>
+      <li>Understand the phenomenon</li>
+    </ol>
+  <li>Prepare de Dataset and the DataLoader
+    <ol>
+      <li>Split the data into train and test</li>
+    </ol>
+  <li>Build the model
+    <ol>
+      <li>Arquitecture of the neural netowrk</li>
+      <li>Optimizer</li>
+      <li>Loss function</li>
+    </ol>
+  </li>
+  <li>Fourth item</li>
+</ol>
+
