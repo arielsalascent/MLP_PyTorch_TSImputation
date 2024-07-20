@@ -299,9 +299,13 @@ The Empalme time series has a high correlation with Tucson, which is almost comp
     </ol>
   </li>
   <li>Train and test loop
-    <ol>Save the best model</ol>
-    <ol>Plot the learning curves</ol>
+    <ol>
+      <li>Save the best model</li>
+      <li>Plot the learning curves</li>
+    </ol>
   <li>Impute the missing values
-    <ol>Table lagged</ol>
-    <ol>Visualize the imputations</ol>
+    <ol>
+      <li>Table lagged</li>
+      <li>Visualize the imputations</li>
+    </ol>
 </ol>
